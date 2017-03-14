@@ -1,0 +1,82 @@
+body {
+    background: #F8F8F8;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.page .title {
+    font-size: 23px;
+    margin: 0;
+    border-bottom: 1px solid #EEE;
+    background: #fff;
+    padding: 15px;
+}
+.page .forms-container {
+    background: #ffffff;
+}
+.page form {
+    background: #fff;
+    padding: 20px;
+    padding: 20px 20px 0;
+    overflow: hidden;
+}
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #4e8bbf;
+    border-top-color: #f8f8f8;
+    border-bottom-color: #f8f8f8;
+    border-radius: 50%;
+    display: inline-block;
+    animation: load 1s linear infinite both;
+}
+.btn {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.btn span {
+    vertical-align: middle;
+}
+@keyframes load {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.alert {
+    cursor: pointer;
+}
+.report-container {
+    display: none;
+}
+.print_container {
+    padding-top: 15px;
+    display: none;
+}
+#chapter option {
+    display: block;
+}
+
+#subChapter option{
+    display: none;
+}
+
+#reportBtn {
+    position: relative;
+    right: 14px;
+}
+h1 , h4  {
+    color: cadetblue;
+}
+
+#logo {
+    height: 180px;
+    width: 180px;
+    margin: 20px;
+
+}

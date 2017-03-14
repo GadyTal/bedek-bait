@@ -1,0 +1,123 @@
+    <h1 class="title">ליקויי בנייה</h1>
+    <form id="reportForm">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">נושא</label>
+                    <div id="subChapterSelection">
+                        <select id="subChapter" class="form-control" disabled>
+                            <option disabled selected value="">בחר פרק</option>
+                            <option disabled value="select_title">בחר נושא</option>
+                            <option value="מיקום_מכונת_כביסה" class="אי_התאמה_וסטיות">מיקום מכונת כביסה</option>
+                            <option value="מיקום_מקרר" class="אי_התאמה_וסטיות">מיקום מקרר</option>
+                            <option value="מידות_חדרים" class="אי_התאמה_וסטיות">מידות חדרים</option>
+                            <option value="כתמי_רטיבות_מלווים_בקילופי_טיח" class="עבודות_איטום">כתמי רטיבות מלווים בקילופי טיח</option>
+                            <option value="חדירת_מים_דרך_קירות_חוץ" class="עבודות_איטום">חדירת מים דרך קירות חוץ</option>
+                            <option value="ביצוע_מחדש_איזורי_מעבר_צינורות" class="אי_התאמה_וסטיות">ביצוע מחדש איורי מעבר צינורות</option>
+                            <option value="החפייה_בין_יריעות_איטום" class="אי_התאמה_וסטיות">החפייה בין יריעות איטום</option>
+                            <option value="חסרות_רשתות_הגנה_מפני_סתימות" class="אי_התאמה_וסטיות">חסרות רשתות הגנה מפני סתימות </option>
+                            <option value="שיפועים_לקויים" class="אי_התאמה_וסטיות">שיפועים לקויים</option>
+                            <option value="לא_קיים_סימון_בידוד_אקוסטי" class="עבודוצ_נגרות_ודלתות">לא קיים סימון בידוד אקוסטי</option>
+                            <option value="כיוון_והתאמה_דלתות_פנים" class="עבודוצ_נגרות_ודלתות">כיוון והתאמה דלתות פנים</option>
+                            <option value="נקיון_דלתות" class="עבודוצ_נגרות_ודלתות">ניקיון דלתות</option>
+                            <option value="צביעה_לקויה" class="עבודוצ_נגרות_ודלתות">צביעה לקויה</option>
+                            <option value="ארונות_מטבח" class="עבודוצ_נגרות_ודלתות">ארונות מטבח</option>
+                            <option value="ארונות_אמבטיה" class="עבודוצ_נגרות_ודלתות">ארונות אמבטיה</option>
+                            <option value="פגמים_חזותיים" class="עבודוצ_נגרות_ודלתות">פגמים חזותיים במשקוף</option>
+                            <option value="מרווח_בי_כנף_הדלת_לאריח" class="עבודוצ_נגרות_ודלתות">מקווח בין כנף הדלת לאריח</option>
+                            <option value="תיקון_גומיית_אטם" class="עבודוצ_נגרות_ודלתות">תיקון גומיית אטם</option>
+                            <option value="ניקיון_דלת" class="עבודוצ_נגרות_ודלתות">ניקיון דלת</option>
+                            <option value="אמבט_תרמו_פלסטי" class="מתקני_תברואה">אמבט תרמו פלסטי</option>
+                            <option value="מפגש_ריצוף_ואריחי_חיפוי_קיר" class="מתקני_תברואה">מפגש ריצוף ואריחי קיר</option>
+                            <option value="מכסים_ורשתות_קופסאות_בקרה" class="מתקני_תברואה">מכסים ורשתות לקופסאות בקרה</option>
+                            <option value="פינת_קרמיקה" class="מתקני_תברואה">פינת קרמיקה</option>
+                            <option value="בדיקת_מערכוצ" class="מתקני_תברואה">בדיקת מערכות</option>
+                            <option value="מכסים_לאסלות" class="מתקני_תברואה">מכסים לאסלות</option>
+                            <option value="subChapter2room3chapter3" class="room3chapter3">sub chapter2 Room 3 Chapter 3</option>
+                            <option value="subChapter3room3chapter3" class="room3chapter3">sub chapter3 Room 3 Chapter 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">פרק</label>
+                    <div id="chapterSelect">
+                        <select id="chapter" class="form-control">
+                            <option disabled selected value="" class="select-first">קודם בחר חדר</option>
+                            <option disabled value="select_title" class="select-title">בחר פרק</option>
+                            <option value="אי_התאמה_וסטיות " class="room">אי התאמה וסטיות</option>
+                            <option value="עבודות_איטום " class="room">עבודות איטום</option>
+                            <option value="עבודות_נגרות_ודלתות " class="room">עבודות נגרות ודלתות</option>
+                            <option value="מתקני_תברואה " class="room">מתתקני תברואה</option>
+                            <option value="מתקני_חשמל " class="room">מתקני חשמל</option>
+                            <option value="עבודוצ_טיח " class="room">עבודות טיח</option>
+                            <option value="עבודות_ריצוץ_וחיפוי " class="room">עבודות ריצוף וחיפוי</option>
+                            <option value="עבודות_צביעה " class="room">עבודות צביעה</option>
+                            <option value="עבודות_אלומיניום " class="room">עבודות אלומיניום</option>
+                            <option value="עבודות_אבן " class="room">עבודות אבן</option>
+                            <option value="מיזוג_אוויר " class="room">מיזוג אוויר</option>
+                            <option value="אלמנטים_מתועשים " class="room">אלמנטים מתועשים</option>
+                            <option value="מרחבים_מוגנים " class="room">מרחבים מוגנים</option>
+                            <option value="שונות" class="room">שונות</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">חדר</label>
+                    <div id="roomSelect">
+                        <select id="room" class="form-control">
+                            <option disabled selected value="">בחר חדר</option>
+                            <option value="room">חדר הורים</option>
+                            <option value="room">חדר 1</option>
+                            <option value="room">חדר 2</option>
+                            <option value="room">חדר 3</option>
+                            <option value="room">סלון</option>
+                            <option value="room">מטבח</option>
+                            <option value="room">שירותי הורים</option>
+                            <option value="room">שירותים 2</option>
+                            <option value="room">שירותים 3</option>
+                            <option value="room">מחסן</option>
+                            <option value="room">מרפת 1</option>
+                            <option value="room">מרפסת 2</option>
+                            <option value="room">חצר</option>
+                            <option value="room">חנייה</option>
+                            <option value="room">מרתף</option>
+                            <option value="שונות">אחר</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">מיקום</label>
+                    <input type="text" class="form-control" id="location" placeholder="מיקום">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">הערות</label>
+                    <input type="text" class="form-control" id="notes" placeholder="הערות">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">תמונה</label>
+                    <input type="text" class="form-control" id="photo" placeholder="תמונה">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">מחיר</label>
+                    <input type="text" class="form-control" id="subChapterPrice" placeholder="אופציונאלי">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="reportBtn" class="btn btn-primary">עדכן דו"ח</button>
+            </div>
+        </div>
+    </form>
