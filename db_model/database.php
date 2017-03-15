@@ -11,10 +11,16 @@ mysql://bdeadb7bcb86b2:e5034150@us-cdbr-iron-east-03.cleardb.net/heroku_d33c22b3
 class database {
     private $host , $db , $user , $password , $link;
     public function __construct() {
-        $this->host     = '$_ENV["CLEARDB_DATABASE_URL"]'; 
-        $this->db       = "heroku_d33c22b3e8f4c37";
-        $this->user     = "bdeadb7bcb86b2";
-        $this->password = "e5034150";
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+
+        $this->host     = $server; 
+        $this->db       = $db;
+        $this->user     = $username;
+        $this->password = $password;
     }
 
     /* db_connection */
