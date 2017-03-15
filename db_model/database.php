@@ -5,13 +5,16 @@
  * Date: 2/23/2017
  * Time: 06:51
  */
+
+mysql://bdeadb7bcb86b2:e5034150@us-cdbr-iron-east-03.cleardb.net/heroku_d33c22b3e8f4c37?reconnect=true
+
 class database {
     private $host , $db , $user , $password , $link;
     public function __construct() {
-        $this->host     = $_ENV["CLEARDB_DATABASE_URL"]; 
-        $this->db       = "form";
-        $this->user     = "root";
-        $this->password = "";
+        $this->host     = '$_ENV["CLEARDB_DATABASE_URL"]'; 
+        $this->db       = "heroku_d33c22b3e8f4c37";
+        $this->user     = "bdeadb7bcb86b2";
+        $this->password = "e5034150";
     }
 
     /* db_connection */
