@@ -8,7 +8,7 @@
 class database {
     private $host , $db , $user , $password , $link;
     public function __construct() {
-        $this->host     = "localhost";
+        $this->host     = $_ENV["CLEARDB_DATABASE_URL"]; 
         $this->db       = "form";
         $this->user     = "root";
         $this->password = "";
