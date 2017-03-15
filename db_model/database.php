@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by IntelliJ IDEA.
- * User: mrkayo
+ * User: gady
  * Date: 2/23/2017
- * Time: 06:51 م
+ * Time: 06:51
  */
 class database {
     private $host , $db , $user , $password , $link;
