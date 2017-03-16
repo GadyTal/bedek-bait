@@ -35,15 +35,16 @@ if ($check) {
   $client_phone = $client_data["clientTel"];
   $report_data    = $db->select("report","client_id",$user_id);
   $db->close();
-  header("Content-type: application/vnd.msword");
+  header("Content-type: application/vnd.msword; charset=windows-1255" );
   header(sprintf("Content-Disposition: attachment; Filename= %s.doc", $client_address));
 }
 ?>
 <!DOCTYPE html>
-<html dir="rtl"> 
+<html"> 
   <head>
+  <meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=windows-1255" />
   </head>
-  <body>
+  <body dir="rtl">
     <?php
       if ($check) { ?>
         <h1 style='text-align: center;'> Report </h1>
