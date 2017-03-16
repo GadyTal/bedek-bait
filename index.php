@@ -26,7 +26,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="forms-container float-right">
                         <h1 id="pageTitle" class="title">פרטי הלקוח והנכס</h1>
-                        <form method="post" id="clientForm" accept-charset="UTF-8>">
+                        <form method="post" id="clientForm">
                             <div class="row">
                                 <div class="col-sm-3">
                                     <div class="form-group">
@@ -263,7 +263,7 @@
                         
                         <div id="report-containe" class="report-container">
                             <h1 class="title">ליקויי בנייה</h1>
-                            <form id="reportForm" accept-charset="UTF-8">
+                            <form id="reportForm">
                                 <div class="row">
 
                                     <div class="col-md-4">
